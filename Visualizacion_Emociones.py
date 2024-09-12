@@ -1,11 +1,15 @@
 from tensorflow.keras.models import load_model
 
-modelo = load_model('modelo_deteccion_sentimientos_dmd.h5')
+modelo = load_model('modelo_deteccion_sentimientos_dmd2.h5')
 
 import cv2
 import numpy as np
 
 numero_a_etiqueta = {0: 'Molesto', 1: 'Disgusto', 2: 'Miedo', 3: 'Feliz', 4: 'Triste', 5: 'Sorpresa', 6: 'Neutral'}
+numRusell_c1 = {0: 'Molesto', 1: 'Disgusto', 2: 'Miedo', 3: 'Feliz', 4: 'Triste', 5: 'Sorpresa', 6: 'Neutral'}
+numRusell_c2 = {0: 'Molesto', 1: 'Disgusto', 2: 'Miedo', 3: 'Feliz', 4: 'Triste', 5: 'Sorpresa', 6: 'Neutral'}
+numRusell_c3 = {0: 'Molesto', 1: 'Disgusto', 2: 'Miedo', 3: 'Feliz', 4: 'Triste', 5: 'Sorpresa', 6: 'Neutral'}
+numRusell_c4 = {0: 'Molesto', 1: 'Disgusto', 2: 'Miedo', 3: 'Feliz', 4: 'Triste', 5: 'Sorpresa', 6: 'Neutral'}
 
 cap = cv2.VideoCapture(0)  # 0 para la cámara principal
 
